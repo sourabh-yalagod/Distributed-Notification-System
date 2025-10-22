@@ -14,5 +14,4 @@ public final class NotificationContextHolder {
     public static void clearNotificationContext() {
         NotificationContextHolder.NOTIFICATION_CONTEXT_THREAD_LOCAL.remove();
     }
-
 }
