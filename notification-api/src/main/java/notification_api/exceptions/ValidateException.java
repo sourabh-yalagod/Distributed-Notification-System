@@ -28,6 +28,6 @@ public class ValidateException extends RuntimeException implements AbstractExcep
 
     @Override
     public String getMessage() {
-        return this.errorMessage;
+        return super.getMessage();
     }
 }

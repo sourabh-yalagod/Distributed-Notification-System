@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Data
-public class TemplateRequest {
+public class CreateTemplateRequestDto {
     @NotBlank(message = "template name is required....!")
     private String name;
 

@@ -1,7 +1,7 @@
 package notification_api.models.context;
 
 public final class NotificationContextHolder {
-    public static final ThreadLocal<NotificationContext> NOTIFICATION_CONTEXT_THREAD_LOCAL = new ThreadLocal<NotificationContext>();
+    public static final ThreadLocal<NotificationContext> NOTIFICATION_CONTEXT_THREAD_LOCAL = new ThreadLocal<>();
 
     public static void setNotificationContext(NotificationContext context) {
         NOTIFICATION_CONTEXT_THREAD_LOCAL.set(context);

@@ -4,15 +4,16 @@ import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import notification_api.controller.AppConstants;
+import notification_api.lib.AppConstants;
 import notification_api.models.context.NotificationContext;
 import notification_api.models.context.NotificationContextHolder;
-import org.apache.catalina.filters.ExpiresFilter;
+import org.apache.catalina.util.ToStringUtil;
 import org.springframework.http.HttpStatus;
+import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
-
 import java.io.IOException;
 
+@Component
 public class NotificationFilter extends OncePerRequestFilter {
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
